@@ -1,0 +1,8 @@
+/venv
+.env_s3
+__pycache__/*.pyc
+/__pycache__
+**/__pycache__
+__pycache__/clf_server.cpython-39.pyc
+__pycache__/er_server.cpython-39.pyc
+__pycache__/utils.cpython-39.pyc

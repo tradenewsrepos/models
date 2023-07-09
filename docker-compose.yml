@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  models_service:
+    env_file:
+      - .env
+    container_name: models_service
+    build:
+      context: .
+      dockerfile: ./Containerfile
+      args:
+        S3_ACCESS_KEY: ${S3_ACCESS_KEY}
+        S3_SECRET_KEY: ${S3_SECRET_KEY}
+    ports:
+      - "8985:8989"
+#  nginx:
+
